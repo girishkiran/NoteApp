@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.girish.activity.NotesViewActivity"
+    tools:showIn="@layout/activity_notes_view">
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/contentTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            />
+
+        <EditText
+            android:id="@+id/contentEditTextview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/text_margin"
+            android:textCursorDrawable="@null"
+            android:minLines="15"
+            android:gravity="top">
+        </EditText>
+    </ViewSwitcher>
+
+
+</android.support.v4.widget.NestedScrollView>
